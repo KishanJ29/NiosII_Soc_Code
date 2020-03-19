@@ -1,0 +1,28 @@
+#include "system.h"
+# include "sys/alt_irq.h"
+# include "altera_avalon_pio_regs.h"
+# include "altera_avalon_timer_regs.h"
+void handleTimerInterrupt (void* context, alt_u32 id);
+void handleTimerInterrupt (void* context, alt_u32 id)
+{
+    static alt_u8 value = 0x00;
+    value = value + 1;
+    printf("%d",value);
+    IOWR_ALTERA_AVALON_PIO_DATA(LED_BASE, value);                          // Display the value with leds
+    IOWR_ALTERA_AVALON_TIMER_STATUS(TIMER_BASE, 0);                             // Clear the interrupt flag
+    static alt_u8 segments[10] = {
+    		0xC0, 0xF9, 0xA4, 0xB0, 0x99, 0x92, 0x82, 0xF8, 0x80, 0x4C /* 0-9 */};
+    if(value <= 9)
+    {
+    	IOWR_ALTERA_AVALON_PIO_DATA(SEVEN_SEG0_BASE, segments[value]);
+    	IOWR_ALTERA_AVALON_PIO_DATA(SEVEN_SEG0_BASE, segments[0]);
+    }else{
+    	IOWR_ALTERA_AVALON_PIO_DATA(SEVEN_SEG0_BASE, segments[value/10]);
+    	IOWR_ALTERA_AVALON_PIO_DATA(SEVEN_SEG0_BASE, segments[value%10]);
+    }
+}
+int main (void)
+{
+    alt_irq_register(TIMER_IRQ, 0, handleTimerInterrupt);                       // Register the ISR for timer
+    while(1);
+}

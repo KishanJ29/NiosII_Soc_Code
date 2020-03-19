@@ -1,0 +1,16 @@
+Fitter Status : Successful - Fri Mar 13 18:04:07 2020
+Quartus II 64-Bit Version : 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition
+Revision Name : sdram
+Top-level Entity Name : sdram_DE0
+Family : Cyclone III
+Device : EP3C16F484C6
+Timing Models : Final
+Total logic elements : 2,435 / 15,408 ( 16 % )
+    Total combinational functions : 2,201 / 15,408 ( 14 % )
+    Dedicated logic registers : 1,439 / 15,408 ( 9 % )
+Total registers : 1508
+Total pins : 49 / 347 ( 14 % )
+Total virtual pins : 0
+Total memory bits : 195,264 / 516,096 ( 38 % )
+Embedded Multiplier 9-bit elements : 0 / 112 ( 0 % )
+Total PLLs : 1 / 4 ( 25 % )

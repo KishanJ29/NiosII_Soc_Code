@@ -1,0 +1,118 @@
+/* 
+ * "Small Hello World" example. 
+ *
+ */
+
+#include <stdio.h>
+#include "system.h"
+#include "altera_avalon_pio_regs.h"
+#include "io.h"
+void delay (int ms);
+int sevenseg (int Disp);
+int main()
+{
+ int state;
+  short int i,j,k,l;
+  printf("Hello from Nios II!\n");
+  //PIO Setup
+
+  state = IORD_ALTERA_AVALON_PIO_DATA(SW_BASE);
+
+
+  //Switch Counter setup
+//  switch(state)
+//  {
+//      case 0: break;
+//      case 1:
+
+   while(1)
+   {
+	   IOWR_ALTERA_AVALON_PIO_DATA(SEVEN_SEG3_BASE, sevenseg (1) );
+
+
+//    for (i = 0; i <= 9; i++)
+//      {
+//       printf(" i = %d\n",i);
+//        IOWR_ALTERA_AVALON_PIO_DATA(SEVEN_SEG3_BASE, sevenseg (i) );
+//        delay(50000);
+//        for ( j = 0; j <= 9; j++)
+//        {
+//          //  printf(" j= %d\n",j);
+//            IOWR_ALTERA_AVALON_PIO_DATA(SEVEN_SEG2_BASE, sevenseg (j) );
+//          for ( k = 0; k <= 9; k++)
+//          {
+//            //  printf(" k = %d\n",k);
+//              IOWR_ALTERA_AVALON_PIO_DATA(SEVEN_SEG1_BASE, sevenseg (k) );
+//            for ( l = 0; l <= 9; l++)
+//    				{
+//    			//	 printf(" l = %d ",l);
+//    				 IOWR_ALTERA_AVALON_PIO_DATA(SEVEN_SEG0_BASE,sevenseg (l));
+//    				}
+//
+//          }
+//
+//        }
+//      }
+
+   //}
+//             state = 0;
+//             break;
+//      default:
+//      break;
+ // }
+  //Display
+}
+   return 0;
+}
+
+void delay (int ms)
+{
+	int var = 0;
+	for ( var = 0; var < ms; var++) {
+
+	}
+}
+int sevenseg (int Disp)
+{
+	int out;
+  switch (Disp)
+       {
+           case 0:
+        	   	   out = 0xC0;
+             break;
+           case 1:
+        	   	   out = 0xF9;
+             break;
+
+           case 2:
+           	   	   out = 0xA4;
+           	 break;
+
+           case 3:
+        	   	   out = 0xB0;
+              break;
+           case 4:
+        	   	   out = 0x99;
+              break;
+           case 5:
+        	   	   out = 0x92;
+              break;
+           case 6:
+        	   	   out = 0x82;
+            break;
+           case 7:
+        	   	   out = 0xF8;
+           break;
+
+           case 8:
+        	   	   out = 0x80;
+           break;
+
+           case 9:
+        	   	   out = 0x4C;
+           break;
+           default: out = 0xC0;
+             break;
+       }
+  	  return out;
+}

@@ -1,0 +1,221 @@
+Flow report for sdram
+Fri Mar 13 18:04:17 2020
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Flow Summary
+  3. Flow Settings
+  4. Flow Non-Default Global Settings
+  5. Flow Elapsed Time
+  6. Flow OS Summary
+  7. Flow Log
+  8. Flow Messages
+  9. Flow Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------------------------------------------------+
+; Flow Summary                                                                         ;
++------------------------------------+-------------------------------------------------+
+; Flow Status                        ; Successful - Fri Mar 13 18:04:12 2020           ;
+; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
+; Revision Name                      ; sdram                                           ;
+; Top-level Entity Name              ; sdram_DE0                                       ;
+; Family                             ; Cyclone III                                     ;
+; Device                             ; EP3C16F484C6                                    ;
+; Timing Models                      ; Final                                           ;
+; Total logic elements               ; 2,435 / 15,408 ( 16 % )                         ;
+;     Total combinational functions  ; 2,201 / 15,408 ( 14 % )                         ;
+;     Dedicated logic registers      ; 1,439 / 15,408 ( 9 % )                          ;
+; Total registers                    ; 1508                                            ;
+; Total pins                         ; 49 / 347 ( 14 % )                               ;
+; Total virtual pins                 ; 0                                               ;
+; Total memory bits                  ; 195,264 / 516,096 ( 38 % )                      ;
+; Embedded Multiplier 9-bit elements ; 0 / 112 ( 0 % )                                 ;
+; Total PLLs                         ; 1 / 4 ( 25 % )                                  ;
++------------------------------------+-------------------------------------------------+
+
+
++-----------------------------------------+
+; Flow Settings                           ;
++-------------------+---------------------+
+; Option            ; Setting             ;
++-------------------+---------------------+
+; Start date & time ; 03/13/2020 18:03:35 ;
+; Main task         ; Compilation         ;
+; Revision Name     ; sdram               ;
++-------------------+---------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                                                            ;
++-------------------------------------+--------------------------------------------------------+---------------+---------------------------------+------------+
+; Assignment Name                     ; Value                                                  ; Default Value ; Entity Name                     ; Section Id ;
++-------------------------------------+--------------------------------------------------------+---------------+---------------------------------+------------+
+; COMPILER_SIGNATURE_ID               ; 215938441493240.158410281511380                        ; --            ; --                              ; --         ;
+; IP_TOOL_ENV                         ; Qsys                                                   ; --            ; DE_0                            ; --         ;
+; IP_TOOL_ENV                         ; Qsys                                                   ; --            ; DE_0_addr_router                ; --         ;
+; IP_TOOL_ENV                         ; Qsys                                                   ; --            ; DE_0_addr_router_001            ; --         ;
+; IP_TOOL_ENV                         ; Qsys                                                   ; --            ; DE_0_cmd_xbar_demux             ; --         ;
+; IP_TOOL_ENV                         ; Qsys                                                   ; --            ; DE_0_cmd_xbar_demux_001         ; --         ;
+; IP_TOOL_ENV                         ; Qsys                                                   ; --            ; DE_0_cmd_xbar_mux               ; --         ;
+; IP_TOOL_ENV                         ; Qsys                                                   ; --            ; DE_0_id_router                  ; --         ;
+; IP_TOOL_ENV                         ; Qsys                                                   ; --            ; DE_0_id_router_002              ; --         ;
+; IP_TOOL_ENV                         ; Qsys                                                   ; --            ; DE_0_id_router_004              ; --         ;
+; IP_TOOL_ENV                         ; Qsys                                                   ; --            ; DE_0_irq_mapper                 ; --         ;
+; IP_TOOL_ENV                         ; Qsys                                                   ; --            ; DE_0_jtag_uart                  ; --         ;
+; IP_TOOL_ENV                         ; Qsys                                                   ; --            ; DE_0_led                        ; --         ;
+; IP_TOOL_ENV                         ; Qsys                                                   ; --            ; DE_0_nios2                      ; --         ;
+; IP_TOOL_ENV                         ; Qsys                                                   ; --            ; DE_0_onchip_memory              ; --         ;
+; IP_TOOL_ENV                         ; Qsys                                                   ; --            ; DE_0_rsp_xbar_demux             ; --         ;
+; IP_TOOL_ENV                         ; Qsys                                                   ; --            ; DE_0_rsp_xbar_demux_002         ; --         ;
+; IP_TOOL_ENV                         ; Qsys                                                   ; --            ; DE_0_rsp_xbar_mux               ; --         ;
+; IP_TOOL_ENV                         ; Qsys                                                   ; --            ; DE_0_rsp_xbar_mux_001           ; --         ;
+; IP_TOOL_ENV                         ; Qsys                                                   ; --            ; DE_0_sdram_controller           ; --         ;
+; IP_TOOL_ENV                         ; Qsys                                                   ; --            ; DE_0_sysid                      ; --         ;
+; IP_TOOL_ENV                         ; Qsys                                                   ; --            ; altera_avalon_sc_fifo           ; --         ;
+; IP_TOOL_ENV                         ; Qsys                                                   ; --            ; altera_merlin_burst_adapter     ; --         ;
+; IP_TOOL_ENV                         ; Qsys                                                   ; --            ; altera_merlin_master_agent      ; --         ;
+; IP_TOOL_ENV                         ; Qsys                                                   ; --            ; altera_merlin_master_translator ; --         ;
+; IP_TOOL_ENV                         ; Qsys                                                   ; --            ; altera_merlin_slave_agent       ; --         ;
+; IP_TOOL_ENV                         ; Qsys                                                   ; --            ; altera_merlin_slave_translator  ; --         ;
+; IP_TOOL_ENV                         ; Qsys                                                   ; --            ; altera_merlin_width_adapter     ; --         ;
+; IP_TOOL_ENV                         ; Qsys                                                   ; --            ; altera_reset_controller         ; --         ;
+; IP_TOOL_NAME                        ; ALTPLL                                                 ; --            ; --                              ; --         ;
+; IP_TOOL_NAME                        ; Qsys                                                   ; --            ; DE_0                            ; --         ;
+; IP_TOOL_NAME                        ; altera_merlin_router                                   ; --            ; DE_0_addr_router                ; --         ;
+; IP_TOOL_NAME                        ; altera_merlin_router                                   ; --            ; DE_0_addr_router_001            ; --         ;
+; IP_TOOL_NAME                        ; altera_merlin_demultiplexer                            ; --            ; DE_0_cmd_xbar_demux             ; --         ;
+; IP_TOOL_NAME                        ; altera_merlin_demultiplexer                            ; --            ; DE_0_cmd_xbar_demux_001         ; --         ;
+; IP_TOOL_NAME                        ; altera_merlin_multiplexer                              ; --            ; DE_0_cmd_xbar_mux               ; --         ;
+; IP_TOOL_NAME                        ; altera_merlin_router                                   ; --            ; DE_0_id_router                  ; --         ;
+; IP_TOOL_NAME                        ; altera_merlin_router                                   ; --            ; DE_0_id_router_002              ; --         ;
+; IP_TOOL_NAME                        ; altera_merlin_router                                   ; --            ; DE_0_id_router_004              ; --         ;
+; IP_TOOL_NAME                        ; altera_irq_mapper                                      ; --            ; DE_0_irq_mapper                 ; --         ;
+; IP_TOOL_NAME                        ; altera_avalon_jtag_uart                                ; --            ; DE_0_jtag_uart                  ; --         ;
+; IP_TOOL_NAME                        ; altera_avalon_pio                                      ; --            ; DE_0_led                        ; --         ;
+; IP_TOOL_NAME                        ; altera_nios2_qsys                                      ; --            ; DE_0_nios2                      ; --         ;
+; IP_TOOL_NAME                        ; altera_avalon_onchip_memory2                           ; --            ; DE_0_onchip_memory              ; --         ;
+; IP_TOOL_NAME                        ; altera_merlin_demultiplexer                            ; --            ; DE_0_rsp_xbar_demux             ; --         ;
+; IP_TOOL_NAME                        ; altera_merlin_demultiplexer                            ; --            ; DE_0_rsp_xbar_demux_002         ; --         ;
+; IP_TOOL_NAME                        ; altera_merlin_multiplexer                              ; --            ; DE_0_rsp_xbar_mux               ; --         ;
+; IP_TOOL_NAME                        ; altera_merlin_multiplexer                              ; --            ; DE_0_rsp_xbar_mux_001           ; --         ;
+; IP_TOOL_NAME                        ; altera_avalon_new_sdram_controller                     ; --            ; DE_0_sdram_controller           ; --         ;
+; IP_TOOL_NAME                        ; altera_avalon_sysid_qsys                               ; --            ; DE_0_sysid                      ; --         ;
+; IP_TOOL_NAME                        ; altera_avalon_sc_fifo                                  ; --            ; altera_avalon_sc_fifo           ; --         ;
+; IP_TOOL_NAME                        ; altera_merlin_burst_adapter                            ; --            ; altera_merlin_burst_adapter     ; --         ;
+; IP_TOOL_NAME                        ; altera_merlin_master_agent                             ; --            ; altera_merlin_master_agent      ; --         ;
+; IP_TOOL_NAME                        ; altera_merlin_master_translator                        ; --            ; altera_merlin_master_translator ; --         ;
+; IP_TOOL_NAME                        ; altera_merlin_slave_agent                              ; --            ; altera_merlin_slave_agent       ; --         ;
+; IP_TOOL_NAME                        ; altera_merlin_slave_translator                         ; --            ; altera_merlin_slave_translator  ; --         ;
+; IP_TOOL_NAME                        ; altera_merlin_width_adapter                            ; --            ; altera_merlin_width_adapter     ; --         ;
+; IP_TOOL_NAME                        ; altera_reset_controller                                ; --            ; altera_reset_controller         ; --         ;
+; IP_TOOL_VERSION                     ; 13.0                                                   ; --            ; --                              ; --         ;
+; IP_TOOL_VERSION                     ; 13.0sp1                                                ; --            ; DE_0                            ; --         ;
+; IP_TOOL_VERSION                     ; 13.0                                                   ; --            ; DE_0_addr_router                ; --         ;
+; IP_TOOL_VERSION                     ; 13.0                                                   ; --            ; DE_0_addr_router_001            ; --         ;
+; IP_TOOL_VERSION                     ; 13.0                                                   ; --            ; DE_0_cmd_xbar_demux             ; --         ;
+; IP_TOOL_VERSION                     ; 13.0                                                   ; --            ; DE_0_cmd_xbar_demux_001         ; --         ;
+; IP_TOOL_VERSION                     ; 13.0                                                   ; --            ; DE_0_cmd_xbar_mux               ; --         ;
+; IP_TOOL_VERSION                     ; 13.0                                                   ; --            ; DE_0_id_router                  ; --         ;
+; IP_TOOL_VERSION                     ; 13.0                                                   ; --            ; DE_0_id_router_002              ; --         ;
+; IP_TOOL_VERSION                     ; 13.0                                                   ; --            ; DE_0_id_router_004              ; --         ;
+; IP_TOOL_VERSION                     ; 13.0                                                   ; --            ; DE_0_irq_mapper                 ; --         ;
+; IP_TOOL_VERSION                     ; 13.0.1.99.2                                            ; --            ; DE_0_jtag_uart                  ; --         ;
+; IP_TOOL_VERSION                     ; 13.0.1.99.2                                            ; --            ; DE_0_led                        ; --         ;
+; IP_TOOL_VERSION                     ; 13.0                                                   ; --            ; DE_0_nios2                      ; --         ;
+; IP_TOOL_VERSION                     ; 13.0.1.99.2                                            ; --            ; DE_0_onchip_memory              ; --         ;
+; IP_TOOL_VERSION                     ; 13.0                                                   ; --            ; DE_0_rsp_xbar_demux             ; --         ;
+; IP_TOOL_VERSION                     ; 13.0                                                   ; --            ; DE_0_rsp_xbar_demux_002         ; --         ;
+; IP_TOOL_VERSION                     ; 13.0                                                   ; --            ; DE_0_rsp_xbar_mux               ; --         ;
+; IP_TOOL_VERSION                     ; 13.0                                                   ; --            ; DE_0_rsp_xbar_mux_001           ; --         ;
+; IP_TOOL_VERSION                     ; 13.0.1.99.2                                            ; --            ; DE_0_sdram_controller           ; --         ;
+; IP_TOOL_VERSION                     ; 13.0                                                   ; --            ; DE_0_sysid                      ; --         ;
+; IP_TOOL_VERSION                     ; 13.0                                                   ; --            ; altera_avalon_sc_fifo           ; --         ;
+; IP_TOOL_VERSION                     ; 13.0                                                   ; --            ; altera_merlin_burst_adapter     ; --         ;
+; IP_TOOL_VERSION                     ; 13.0                                                   ; --            ; altera_merlin_master_agent      ; --         ;
+; IP_TOOL_VERSION                     ; 13.0                                                   ; --            ; altera_merlin_master_translator ; --         ;
+; IP_TOOL_VERSION                     ; 13.0                                                   ; --            ; altera_merlin_slave_agent       ; --         ;
+; IP_TOOL_VERSION                     ; 13.0                                                   ; --            ; altera_merlin_slave_translator  ; --         ;
+; IP_TOOL_VERSION                     ; 13.0                                                   ; --            ; altera_merlin_width_adapter     ; --         ;
+; IP_TOOL_VERSION                     ; 13.0                                                   ; --            ; altera_reset_controller         ; --         ;
+; MAX_CORE_JUNCTION_TEMP              ; 85                                                     ; --            ; --                              ; --         ;
+; MIN_CORE_JUNCTION_TEMP              ; 0                                                      ; --            ; --                              ; --         ;
+; MISC_FILE                           ; DE_0/synthesis/../../DE_0.cmp                          ; --            ; --                              ; --         ;
+; MISC_FILE                           ; DE_0/synthesis/../../DE_0.qsys                         ; --            ; --                              ; --         ;
+; MISC_FILE                           ; sram_clk/sram_clk.bsf                                  ; --            ; --                              ; --         ;
+; MISC_FILE                           ; sram_clk/sram_clk_inst.vhd                             ; --            ; --                              ; --         ;
+; MISC_FILE                           ; sram_clk/sram_clk.cmp                                  ; --            ; --                              ; --         ;
+; MISC_FILE                           ; sram_clk/sram_clk.ppf                                  ; --            ; --                              ; --         ;
+; NOMINAL_CORE_SUPPLY_VOLTAGE         ; 1.2V                                                   ; --            ; --                              ; --         ;
+; PARTITION_COLOR                     ; 16764057                                               ; --            ; sdram_DE0                       ; Top        ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING                                  ; --            ; sdram_DE0                       ; Top        ;
+; PARTITION_NETLIST_TYPE              ; SOURCE                                                 ; --            ; sdram_DE0                       ; Top        ;
+; PROJECT_OUTPUT_DIRECTORY            ; output_files                                           ; --            ; --                              ; --         ;
+; SLD_INFO                            ; QSYS_NAME DE_0 HAS_SOPCINFO 1 GENERATION_ID 1584078928 ; --            ; DE_0                            ; --         ;
+; SOPCINFO_FILE                       ; DE_0/synthesis/../../DE_0.sopcinfo                     ; --            ; --                              ; --         ;
+; SYNTHESIS_ONLY_QIP                  ; On                                                     ; --            ; --                              ; --         ;
+; TOP_LEVEL_ENTITY                    ; sdram_DE0                                              ; sdram         ; --                              ; --         ;
+; VHDL_INPUT_VERSION                  ; VHDL_2008                                              ; VHDL_1993     ; --                              ; --         ;
+; VHDL_SHOW_LMF_MAPPING_MESSAGES      ; Off                                                    ; --            ; --                              ; --         ;
++-------------------------------------+--------------------------------------------------------+---------------+---------------------------------+------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------+
+; Flow Elapsed Time                                                                                                             ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Analysis & Synthesis      ; 00:00:15     ; 1.0                     ; 4797 MB             ; 00:00:11                           ;
+; Fitter                    ; 00:00:13     ; 1.0                     ; 5467 MB             ; 00:00:15                           ;
+; Assembler                 ; 00:00:01     ; 1.0                     ; 4591 MB             ; 00:00:01                           ;
+; TimeQuest Timing Analyzer ; 00:00:03     ; 1.0                     ; 4719 MB             ; 00:00:03                           ;
+; Total                     ; 00:00:32     ; --                      ; --                  ; 00:00:30                           ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+
+
++----------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                        ;
++---------------------------+------------------+-----------+------------+----------------+
+; Module Name               ; Machine Hostname ; OS Name   ; OS Version ; Processor type ;
++---------------------------+------------------+-----------+------------+----------------+
+; Analysis & Synthesis      ; FLDEC-18         ; Windows 7 ; 6.2        ; x86_64         ;
+; Fitter                    ; FLDEC-18         ; Windows 7 ; 6.2        ; x86_64         ;
+; Assembler                 ; FLDEC-18         ; Windows 7 ; 6.2        ; x86_64         ;
+; TimeQuest Timing Analyzer ; FLDEC-18         ; Windows 7 ; 6.2        ; x86_64         ;
++---------------------------+------------------+-----------+------------+----------------+
+
+
+------------
+; Flow Log ;
+------------
+quartus_map --read_settings_files=on --write_settings_files=off sdram -c sdram
+quartus_fit --read_settings_files=off --write_settings_files=off sdram -c sdram
+quartus_asm --read_settings_files=off --write_settings_files=off sdram -c sdram
+quartus_sta sdram -c sdram
+
+
+

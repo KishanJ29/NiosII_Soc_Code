@@ -1,0 +1,43 @@
+/*
+ * "Hello World" example.
+ *
+ * This example prints 'Hello from Nios II' to the STDOUT stream. It runs on
+ * the Nios II 'standard', 'full_featured', 'fast', and 'low_cost' example
+ * designs. It runs with or without the MicroC/OS-II RTOS and requires a STDOUT
+ * device in your system's hardware.
+ * The memory footprint of this hosted application is ~69 kbytes by default
+ * using the standard reference design.
+ *
+ * For a reduced footprint version of this template, and an explanation of how
+ * to reduce the memory footprint for a given application, see the
+ * "small_hello_world" template.
+ *
+ */
+
+#include <stdio.h>
+#include "system.h"
+#include "altera_avalon_pio_regs.h"
+#include "io.h"
+//void delay (int ms);
+//int sevenseg (int Disp);
+int main()
+{
+ int state;
+ short int dig1,dig2;
+  //short int i,j,k,l;
+  printf("Hello from Nios II!\n");
+  state = IORD_ALTERA_AVALON_PIO_DATA(SW_BASE);
+
+  IOWR_ALTERA_AVALON_PIO_DATA(SEVEN_SEG1_BASE,0xC0);
+  IOWR_ALTERA_AVALON_PIO_DATA(SEVEN_SEG2_BASE,0xC0);
+  IOWR_ALTERA_AVALON_PIO_DATA(SEVEN_SEG3_BASE,0xC0);
+  //while (1){
+	  printf("%d",state);
+	  dig1 = state%10;
+	  dig2 = state/10;
+	  IOWR_ALTERA_AVALON_PIO_DATA(SEVEN_SEG0_BASE,dig1);
+	  IOWR_ALTERA_AVALON_PIO_DATA(SEVEN_SEG0_BASE,dig2);
+ // }
+
+  return 0;
+}

@@ -1,0 +1,129 @@
+/*
+ * "Hello World" example.
+ *
+ * This example prints 'Hello from Nios II' to the STDOUT stream. It runs on
+ * the Nios II 'standard', 'full_featured', 'fast', and 'low_cost' example
+ * designs. It runs with or without the MicroC/OS-II RTOS and requires a STDOUT
+ * device in your system's hardware.
+ * The memory footprint of this hosted application is ~69 kbytes by default
+ * using the standard reference design.
+ *
+ * For a reduced footprint version of this template, and an explanation of how
+ * to reduce the memory footprint for a given application, see the
+ * "small_hello_world" template.
+ *
+ */
+
+/*
+ * "Hello World" example.
+ *
+ * This example prints 'Hello from Nios II' to the STDOUT stream. It runs on
+ * the Nios II 'standard', 'full_featured', 'fast', and 'low_cost' example
+ * designs. It runs with or without the MicroC/OS-II RTOS and requires a STDOUT
+ * device in your system's hardware.
+ * The memory footprint of this hosted application is ~69 kbytes by default
+ * using the standard reference design.
+ *
+ * For a reduced footprint version of this template, and an explanation of how
+ * to reduce the memory footprint for a given application, see the
+ * "small_hello_world" template.
+ *
+ */
+
+#include <stdio.h>
+#include "system.h"
+#include "io.h"
+#include althera
+#define SW 0x0000000
+#define led 0x00000
+
+int main()
+{
+	alt_u8 max,count, state;
+  short int i,j,k,l;
+  printf("Hello from Nios II!\n");
+  //PIO Setup
+  int seg = 0;
+  void
+
+
+  //Switch Counter setup
+  switch(state)
+  {
+      case 0: break;
+      case 1: count = count + 1;
+             state = 0;
+             break;
+      default: state = 0;
+      break;
+  }
+  //Display incrmenter
+  for (i = 0; i <= 9; i++)
+  {
+    printf(" i = %d\n",i);
+		IOWR__altera_avalon_pio(7SEG3_BASE, sevenseg (i) );
+    for ( j = 0; j <= 9; j++)
+    {
+        printf(" j= %d\n",j);
+        IOWR__altera_avalon_pio(SEVEN_SEG0_BASE, sevenseg (j) );
+      for ( k = 0; k <= 9; k++)
+      {
+          printf(" k = %d\n",k);
+          IOWR__altera_avalon_pio(SEVEN_SEG1_BASE, sevenseg (k) );
+        for ( l = 0; l <= 9; l++)
+				{
+				 printf(" l = %d ",l);
+				 IOWR__altera_avalon_pio(SEVEN_SEG0_BASE,sevenseg (l));
+				}
+
+      }
+
+    }
+  }
+   return 0;
+}
+
+void sevenseg (int Disp)
+{
+	int out;
+  switch (Disp)
+       {
+           case 0:
+        	   	   out = 0xC0;
+             break;
+           case 1:
+        	   	   out = 0xF9;
+             break;
+
+           case 2:
+           	   	   out = 0xA4;
+           	 break;
+
+           case 3:
+        	   	   out = 0xB0;
+              break;
+           case 4:
+        	   	   out = 0x99;
+              break;
+           case 5:
+        	   	   out = 0x92;
+              break;
+           case 6:
+        	   	   out = 0x82;
+            break;
+           case 7:
+        	   	   out = 0xF8;
+           break;
+
+           case 8:
+        	   	   out = 0x80;
+           break;
+
+           case 9:
+        	   	   out = 0x4C;
+           break;
+           default: out = 0xC0;
+             break;
+       }
+  	  return out;
+}

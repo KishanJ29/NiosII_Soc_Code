@@ -1,0 +1,129 @@
+Flow report for blinkingLed
+Sat Mar 14 11:35:57 2020
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Flow Summary
+  3. Flow Settings
+  4. Flow Non-Default Global Settings
+  5. Flow Elapsed Time
+  6. Flow OS Summary
+  7. Flow Log
+  8. Flow Messages
+  9. Flow Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++---------------------------------------------------------------------------------------+
+; Flow Summary                                                                          ;
++-------------------------------------+-------------------------------------------------+
+; Flow Status                         ; Successful - Sat Mar 14 11:35:42 2020           ;
+; Quartus II 64-Bit Version           ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
+; Revision Name                       ; blinkingLed                                     ;
+; Top-level Entity Name               ; Verilog1                                        ;
+; Family                              ; Cyclone V                                       ;
+; Device                              ; 5CGXFC5C6F27C7                                  ;
+; Timing Models                       ; Preliminary                                     ;
+; Logic utilization (in ALMs)         ; 1,553 / 29,080 ( 5 % )                          ;
+; Total registers                     ; 2201                                            ;
+; Total pins                          ; 17 / 364 ( 5 % )                                ;
+; Total virtual pins                  ; 0                                               ;
+; Total block memory bits             ; 1,702,336 / 4,567,040 ( 37 % )                  ;
+; Total DSP Blocks                    ; 2 / 150 ( 1 % )                                 ;
+; Total HSSI RX PCSs                  ; 0 / 6 ( 0 % )                                   ;
+; Total HSSI PMA RX Deserializers     ; 0 / 6 ( 0 % )                                   ;
+; Total HSSI PMA RX ATT Deserializers ; 0                                               ;
+; Total HSSI TX PCSs                  ; 0 / 6 ( 0 % )                                   ;
+; Total HSSI PMA TX Serializers       ; 0 / 6 ( 0 % )                                   ;
+; Total HSSI PMA TX ATT Serializers   ; 0 / 6 ( 0 % )                                   ;
+; Total PLLs                          ; 0 / 12 ( 0 % )                                  ;
+; Total DLLs                          ; 0 / 4 ( 0 % )                                   ;
++-------------------------------------+-------------------------------------------------+
+
+
++-----------------------------------------+
+; Flow Settings                           ;
++-------------------+---------------------+
+; Option            ; Setting             ;
++-------------------+---------------------+
+; Start date & time ; 03/14/2020 11:33:33 ;
+; Main task         ; Compilation         ;
+; Revision Name     ; blinkingLed         ;
++-------------------+---------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                     ;
++-------------------------------------+---------------------------------+---------------+-------------+----------------+
+; Assignment Name                     ; Value                           ; Default Value ; Entity Name ; Section Id     ;
++-------------------------------------+---------------------------------+---------------+-------------+----------------+
+; COMPILER_SIGNATURE_ID               ; 215938441493240.158416581311356 ; --            ; --          ; --             ;
+; EDA_OUTPUT_DATA_FORMAT              ; None                            ; --            ; --          ; eda_simulation ;
+; MAX_CORE_JUNCTION_TEMP              ; 85                              ; --            ; --          ; --             ;
+; MIN_CORE_JUNCTION_TEMP              ; 0                               ; --            ; --          ; --             ;
+; PARTITION_COLOR                     ; 16764057                        ; --            ; Verilog1    ; Top            ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING           ; --            ; Verilog1    ; Top            ;
+; PARTITION_NETLIST_TYPE              ; SOURCE                          ; --            ; Verilog1    ; Top            ;
+; PROJECT_OUTPUT_DIRECTORY            ; output_files                    ; --            ; --          ; --             ;
+; TOP_LEVEL_ENTITY                    ; Verilog1                        ; blinkingLed   ; --          ; --             ;
++-------------------------------------+---------------------------------+---------------+-------------+----------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------+
+; Flow Elapsed Time                                                                                                             ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Analysis & Synthesis      ; 00:00:35     ; 1.0                     ; 4883 MB             ; 00:00:30                           ;
+; Fitter                    ; 00:01:14     ; 1.7                     ; 6435 MB             ; 00:01:29                           ;
+; Assembler                 ; 00:00:12     ; 1.0                     ; 4814 MB             ; 00:00:10                           ;
+; TimeQuest Timing Analyzer ; 00:00:14     ; 1.4                     ; 5394 MB             ; 00:00:22                           ;
+; Total                     ; 00:02:15     ; --                      ; --                  ; 00:02:31                           ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+
+
++----------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                        ;
++---------------------------+------------------+-----------+------------+----------------+
+; Module Name               ; Machine Hostname ; OS Name   ; OS Version ; Processor type ;
++---------------------------+------------------+-----------+------------+----------------+
+; Analysis & Synthesis      ; FLDEC-18         ; Windows 7 ; 6.2        ; x86_64         ;
+; Fitter                    ; FLDEC-18         ; Windows 7 ; 6.2        ; x86_64         ;
+; Assembler                 ; FLDEC-18         ; Windows 7 ; 6.2        ; x86_64         ;
+; TimeQuest Timing Analyzer ; FLDEC-18         ; Windows 7 ; 6.2        ; x86_64         ;
++---------------------------+------------------+-----------+------------+----------------+
+
+
+------------
+; Flow Log ;
+------------
+quartus_map --read_settings_files=on --write_settings_files=off blinkingLed -c blinkingLed
+quartus_fit --read_settings_files=off --write_settings_files=off blinkingLed -c blinkingLed
+quartus_asm --read_settings_files=off --write_settings_files=off blinkingLed -c blinkingLed
+quartus_sta blinkingLed -c blinkingLed
+
+
+

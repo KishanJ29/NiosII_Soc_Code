@@ -1,0 +1,188 @@
+Info: Starting: Create block symbol file (.bsf)
+Info: ip-generate --project-directory=D:/QuartusProject/sdram_2/ --output-directory=D:/QuartusProject/sdram_2/DE_0/ --report-file=bsf:D:/QuartusProject/sdram_2/DE_0.bsf --system-info=DEVICE_FAMILY="Cyclone III" --system-info=DEVICE=EP3C16F484C6 --system-info=DEVICE_SPEEDGRADE=6 --component-file=D:/QuartusProject/sdram_2/DE_0.qsys
+Progress: Loading sdram_2/DE_0.qsys
+Progress: Reading input file
+Progress: Adding clk_50 [clock_source 13.0]
+Progress: Parameterizing module clk_50
+Progress: Adding nios2 [altera_nios2_qsys 13.0]
+Progress: Parameterizing module nios2
+Progress: Adding jtag_uart [altera_avalon_jtag_uart 13.0.1.99.2]
+Progress: Parameterizing module jtag_uart
+Progress: Adding onchip_memory [altera_avalon_onchip_memory2 13.0.1.99.2]
+Progress: Parameterizing module onchip_memory
+Progress: Adding led [altera_avalon_pio 13.0.1.99.2]
+Progress: Parameterizing module led
+Progress: Adding sdram_controller [altera_avalon_new_sdram_controller 13.0.1.99.2]
+Progress: Parameterizing module sdram_controller
+Progress: Adding pll [altpll 13.0]
+Progress: Parameterizing module pll
+Progress: Adding sysid [altera_avalon_sysid_qsys 13.0]
+Progress: Parameterizing module sysid
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: DE_0.sysid: System ID is not assigned automatically. Edit the System ID parameter to provide a unique ID
+Info: DE_0.sysid: Time stamp will be automatically updated when this component is generated.
+Warning: DE_0.pll: pll.areset_conduit must be exported, or connected to a matching conduit.
+Warning: DE_0.pll: pll.locked_conduit must be exported, or connected to a matching conduit.
+Warning: DE_0.pll: pll.phasedone_conduit must be exported, or connected to a matching conduit.
+Info: ip-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: ip-generate --project-directory=D:/QuartusProject/sdram_2/ --output-directory=D:/QuartusProject/sdram_2/DE_0/synthesis/ --file-set=QUARTUS_SYNTH --report-file=sopcinfo:D:/QuartusProject/sdram_2/DE_0.sopcinfo --report-file=html:D:/QuartusProject/sdram_2/DE_0.html --report-file=qip:D:/QuartusProject/sdram_2/DE_0/synthesis/DE_0.qip --report-file=cmp:D:/QuartusProject/sdram_2/DE_0.cmp --report-file=svd --system-info=DEVICE_FAMILY="Cyclone III" --system-info=DEVICE=EP3C16F484C6 --system-info=DEVICE_SPEEDGRADE=6 --component-file=D:/QuartusProject/sdram_2/DE_0.qsys --language=VHDL
+Progress: Loading sdram_2/DE_0.qsys
+Progress: Reading input file
+Progress: Adding clk_50 [clock_source 13.0]
+Progress: Parameterizing module clk_50
+Progress: Adding nios2 [altera_nios2_qsys 13.0]
+Progress: Parameterizing module nios2
+Progress: Adding jtag_uart [altera_avalon_jtag_uart 13.0.1.99.2]
+Progress: Parameterizing module jtag_uart
+Progress: Adding onchip_memory [altera_avalon_onchip_memory2 13.0.1.99.2]
+Progress: Parameterizing module onchip_memory
+Progress: Adding led [altera_avalon_pio 13.0.1.99.2]
+Progress: Parameterizing module led
+Progress: Adding sdram_controller [altera_avalon_new_sdram_controller 13.0.1.99.2]
+Progress: Parameterizing module sdram_controller
+Progress: Adding pll [altpll 13.0]
+Progress: Parameterizing module pll
+Progress: Adding sysid [altera_avalon_sysid_qsys 13.0]
+Progress: Parameterizing module sysid
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: DE_0.sysid: System ID is not assigned automatically. Edit the System ID parameter to provide a unique ID
+Info: DE_0.sysid: Time stamp will be automatically updated when this component is generated.
+Warning: DE_0.pll: pll.areset_conduit must be exported, or connected to a matching conduit.
+Warning: DE_0.pll: pll.locked_conduit must be exported, or connected to a matching conduit.
+Warning: DE_0.pll: pll.phasedone_conduit must be exported, or connected to a matching conduit.
+Info: DE_0: Generating DE_0 "DE_0" for QUARTUS_SYNTH
+Info: pipeline_bridge_swap_transform: After transform: 8 modules, 35 connections
+Info: No custom instruction connections, skipping transform 
+Info: merlin_translator_transform: After transform: 17 modules, 70 connections
+Info: merlin_domain_transform: After transform: 36 modules, 184 connections
+Info: merlin_router_transform: After transform: 45 modules, 219 connections
+Info: merlin_burst_transform: After transform: 46 modules, 223 connections
+Info: reset_adaptation_transform: After transform: 49 modules, 184 connections
+Info: merlin_network_to_switch_transform: After transform: 66 modules, 230 connections
+Info: merlin_width_transform: After transform: 68 modules, 236 connections
+Info: Inserting clock-crossing logic between cmd_xbar_demux.src5 and cmd_xbar_mux_005.sink0
+Info: Inserting clock-crossing logic between cmd_xbar_demux_001.src5 and cmd_xbar_mux_005.sink1
+Info: Inserting clock-crossing logic between rsp_xbar_demux_005.src0 and rsp_xbar_mux.sink5
+Info: Inserting clock-crossing logic between rsp_xbar_demux_005.src1 and rsp_xbar_mux_001.sink5
+Info: com_altera_sopcmodel_transforms_avalon_ClockCrossingTransform: After transform: 72 modules, 256 connections
+Info: merlin_mm_transform: After transform: 72 modules, 256 connections
+Info: merlin_interrupt_mapper_transform: After transform: 73 modules, 259 connections
+Warning: DE_0: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE_0: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE_0: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE_0: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE_0: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE_0: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE_0: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE_0: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE_0: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE_0: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE_0: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE_0: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE_0: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE_0: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE_0: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE_0: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE_0: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE_0: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE_0: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE_0: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE_0: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE_0: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE_0: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE_0: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE_0: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE_0: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE_0: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE_0: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE_0: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE_0: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE_0: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE_0: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE_0: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE_0: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE_0: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE_0: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE_0: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE_0: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE_0: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE_0: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE_0: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE_0: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE_0: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE_0: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE_0: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE_0: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE_0: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE_0: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE_0: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE_0: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE_0: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE_0: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DE_0: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Info: nios2: Starting RTL generation for module 'DE_0_nios2'
+Info: nios2:   Generation command is [exec C:/altera/13.0sp1/quartus/../ip/altera/nios2_ip/altera_nios2/eperl.exe -I C:/altera/13.0sp1/quartus/common/ip/altera/common/perl/5.8.3 -I C:/altera/13.0sp1/quartus/sopc_builder/bin/europa -I C:/altera/13.0sp1/quartus/sopc_builder/bin/perl_lib -I C:/altera/13.0sp1/quartus/sopc_builder/bin -I C:/altera/13.0sp1/quartus/../ip/altera/nios2_ip/altera_nios2/cpu_lib -I C:/altera/13.0sp1/quartus/../ip/altera/nios2_ip/altera_nios2/nios_lib -I C:/altera/13.0sp1/quartus/../ip/altera/nios2_ip/altera_nios2 -I C:/altera/13.0sp1/quartus/../ip/altera/nios2_ip/altera_nios2 -- C:/altera/13.0sp1/quartus/../ip/altera/nios2_ip/altera_nios2/generate_rtl.epl --name=DE_0_nios2 --dir=C:/Users/KISHAN/AppData/Local/Temp/alt8333_2733581944491651487.dir/0001_nios2_gen/ --quartus_dir=C:/altera/13.0sp1/quartus --verilog --config=C:/Users/KISHAN/AppData/Local/Temp/alt8333_2733581944491651487.dir/0001_nios2_gen//DE_0_nios2_processor_configuration.pl  --do_build_sim=0    --bogus  ]
+Info: nios2: # 2020.03.12 14:08:43 (*) Starting Nios II generation
+Info: nios2: # 2020.03.12 14:08:43 (*)   Checking for plaintext license.
+Info: nios2: # 2020.03.12 14:08:45 (*)   Couldn't query license setup in Quartus directory C:/altera/13.0sp1/quartus
+Info: nios2: # 2020.03.12 14:08:45 (*)   Defaulting to contents of LM_LICENSE_FILE environment variable
+Info: nios2: # 2020.03.12 14:08:45 (*)   LM_LICENSE_FILE environment variable is empty
+Info: nios2: # 2020.03.12 14:08:45 (*)   Plaintext license not found.
+Info: nios2: # 2020.03.12 14:08:45 (*)   No license required to generate encrypted Nios II/e.
+Info: nios2: # 2020.03.12 14:08:45 (*)   Elaborating CPU configuration settings
+Info: nios2: # 2020.03.12 14:08:45 (*)   Creating all objects for CPU
+Info: nios2: # 2020.03.12 14:08:46 (*)   Generating RTL from CPU objects
+Info: nios2: # 2020.03.12 14:08:46 (*)   Creating plain-text RTL
+Info: nios2: # 2020.03.12 14:08:47 (*) Done Nios II generation
+Info: nios2: Done RTL generation for module 'DE_0_nios2'
+Info: nios2: "DE_0" instantiated altera_nios2_qsys "nios2"
+Info: jtag_uart: Starting RTL generation for module 'DE_0_jtag_uart'
+Info: jtag_uart:   Generation command is [exec C:/altera/13.0sp1/quartus/bin/perl/bin/perl.exe -I C:/altera/13.0sp1/quartus/common/ip/altera/common/perl/5.8.3 -I C:/altera/13.0sp1/quartus/sopc_builder/bin/europa -I C:/altera/13.0sp1/quartus/sopc_builder/bin/perl_lib -I C:/altera/13.0sp1/quartus/sopc_builder/bin -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart -- C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart/generate_rtl.pl --name=DE_0_jtag_uart --dir=C:/Users/KISHAN/AppData/Local/Temp/alt8333_2733581944491651487.dir/0002_jtag_uart_gen/ --quartus_dir=C:/altera/13.0sp1/quartus --verilog --config=C:/Users/KISHAN/AppData/Local/Temp/alt8333_2733581944491651487.dir/0002_jtag_uart_gen//DE_0_jtag_uart_component_configuration.pl  --do_build_sim=0  ]
+Info: jtag_uart: Done RTL generation for module 'DE_0_jtag_uart'
+Info: jtag_uart: "DE_0" instantiated altera_avalon_jtag_uart "jtag_uart"
+Info: onchip_memory: Starting RTL generation for module 'DE_0_onchip_memory'
+Info: onchip_memory:   Generation command is [exec C:/altera/13.0sp1/quartus/bin/perl/bin/perl.exe -I C:/altera/13.0sp1/quartus/common/ip/altera/common/perl/5.8.3 -I C:/altera/13.0sp1/quartus/sopc_builder/bin/europa -I C:/altera/13.0sp1/quartus/sopc_builder/bin/perl_lib -I C:/altera/13.0sp1/quartus/sopc_builder/bin -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=DE_0_onchip_memory --dir=C:/Users/KISHAN/AppData/Local/Temp/alt8333_2733581944491651487.dir/0003_onchip_memory_gen/ --quartus_dir=C:/altera/13.0sp1/quartus --verilog --config=C:/Users/KISHAN/AppData/Local/Temp/alt8333_2733581944491651487.dir/0003_onchip_memory_gen//DE_0_onchip_memory_component_configuration.pl  --do_build_sim=0  ]
+Info: onchip_memory: Done RTL generation for module 'DE_0_onchip_memory'
+Info: onchip_memory: "DE_0" instantiated altera_avalon_onchip_memory2 "onchip_memory"
+Info: led: Starting RTL generation for module 'DE_0_led'
+Info: led:   Generation command is [exec C:/altera/13.0sp1/quartus/bin/perl/bin/perl.exe -I C:/altera/13.0sp1/quartus/common/ip/altera/common/perl/5.8.3 -I C:/altera/13.0sp1/quartus/sopc_builder/bin/europa -I C:/altera/13.0sp1/quartus/sopc_builder/bin/perl_lib -I C:/altera/13.0sp1/quartus/sopc_builder/bin -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=DE_0_led --dir=C:/Users/KISHAN/AppData/Local/Temp/alt8333_2733581944491651487.dir/0004_led_gen/ --quartus_dir=C:/altera/13.0sp1/quartus --verilog --config=C:/Users/KISHAN/AppData/Local/Temp/alt8333_2733581944491651487.dir/0004_led_gen//DE_0_led_component_configuration.pl  --do_build_sim=0  ]
+Info: led: Done RTL generation for module 'DE_0_led'
+Info: led: "DE_0" instantiated altera_avalon_pio "led"
+Info: sdram_controller: Starting RTL generation for module 'DE_0_sdram_controller'
+Info: sdram_controller:   Generation command is [exec C:/altera/13.0sp1/quartus/bin/perl/bin/perl.exe -I C:/altera/13.0sp1/quartus/common/ip/altera/common/perl/5.8.3 -I C:/altera/13.0sp1/quartus/sopc_builder/bin/europa -I C:/altera/13.0sp1/quartus/sopc_builder/bin/perl_lib -I C:/altera/13.0sp1/quartus/sopc_builder/bin -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_new_sdram_controller -- C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_new_sdram_controller/generate_rtl.pl --name=DE_0_sdram_controller --dir=C:/Users/KISHAN/AppData/Local/Temp/alt8333_2733581944491651487.dir/0005_sdram_controller_gen/ --quartus_dir=C:/altera/13.0sp1/quartus --verilog --config=C:/Users/KISHAN/AppData/Local/Temp/alt8333_2733581944491651487.dir/0005_sdram_controller_gen//DE_0_sdram_controller_component_configuration.pl  --do_build_sim=0  ]
+Info: sdram_controller: Done RTL generation for module 'DE_0_sdram_controller'
+Info: sdram_controller: "DE_0" instantiated altera_avalon_new_sdram_controller "sdram_controller"
+Info: pll: "DE_0" instantiated altpll "pll"
+Info: sysid: "DE_0" instantiated altera_avalon_sysid_qsys "sysid"
+Info: nios2_data_master_translator: "DE_0" instantiated altera_merlin_master_translator "nios2_data_master_translator"
+Info: nios2_jtag_debug_module_translator: "DE_0" instantiated altera_merlin_slave_translator "nios2_jtag_debug_module_translator"
+Info: nios2_data_master_translator_avalon_universal_master_0_agent: "DE_0" instantiated altera_merlin_master_agent "nios2_data_master_translator_avalon_universal_master_0_agent"
+Info: nios2_jtag_debug_module_translator_avalon_universal_slave_0_agent: "DE_0" instantiated altera_merlin_slave_agent "nios2_jtag_debug_module_translator_avalon_universal_slave_0_agent"
+Info: nios2_jtag_debug_module_translator_avalon_universal_slave_0_agent_rsp_fifo: "DE_0" instantiated altera_avalon_sc_fifo "nios2_jtag_debug_module_translator_avalon_universal_slave_0_agent_rsp_fifo"
+Info: addr_router: "DE_0" instantiated altera_merlin_router "addr_router"
+Info: id_router: "DE_0" instantiated altera_merlin_router "id_router"
+Info: id_router_004: "DE_0" instantiated altera_merlin_router "id_router_004"
+Info: burst_adapter: "DE_0" instantiated altera_merlin_burst_adapter "burst_adapter"
+Info: rst_controller: "DE_0" instantiated altera_reset_controller "rst_controller"
+Info: cmd_xbar_demux: "DE_0" instantiated altera_merlin_demultiplexer "cmd_xbar_demux"
+Info: cmd_xbar_mux: "DE_0" instantiated altera_merlin_multiplexer "cmd_xbar_mux"
+Info: rsp_xbar_demux: "DE_0" instantiated altera_merlin_demultiplexer "rsp_xbar_demux"
+Info: rsp_xbar_mux: "DE_0" instantiated altera_merlin_multiplexer "rsp_xbar_mux"
+Info: Reusing file D:/QuartusProject/sdram_2/DE_0/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: width_adapter: "DE_0" instantiated altera_merlin_width_adapter "width_adapter"
+Info: Reusing file D:/QuartusProject/sdram_2/DE_0/synthesis/submodules/altera_merlin_address_alignment.sv
+Info: Reusing file D:/QuartusProject/sdram_2/DE_0/synthesis/submodules/altera_merlin_burst_uncompressor.sv
+Info: crosser: "DE_0" instantiated altera_avalon_st_handshake_clock_crosser "crosser"
+Info: irq_mapper: "DE_0" instantiated altera_irq_mapper "irq_mapper"
+Info: DE_0: Done DE_0" with 25 modules, 167 files, 3123498 bytes
+Info: ip-generate succeeded.
+Info: Finished: Create HDL design files for synthesis

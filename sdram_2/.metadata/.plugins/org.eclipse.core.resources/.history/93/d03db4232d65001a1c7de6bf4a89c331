@@ -1,0 +1,28 @@
+/* 
+ * 
+ *
+ */
+
+#include <stdio.h>
+#include "system.h"
+#include <stdlib.h>
+#include "altera_avalon_pio_regs.h"
+
+int main()
+{
+
+    printf("Hello from Nios II on (SDRAM)\n");
+    void *lots_of_memory = malloc(1024*1024*8); // allocate 5MB of memory
+        printf("malloc returned 0x%08lx\n", (alt_u32)lots_of_memory);
+        printf("Test line 2");
+    while(1) {
+
+    	IOWR_ALTERA_AVALON_PIO_DATA(LED_BASE,   0x05);
+
+    }
+
+
+
+  return 0;
+}
+

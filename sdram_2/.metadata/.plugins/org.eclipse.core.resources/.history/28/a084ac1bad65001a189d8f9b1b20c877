@@ -1,0 +1,58 @@
+/* 
+ * 
+ *
+ */
+
+#include <stdio.h>
+#include "system.h"
+#include <stdlib.h>
+#include "altera_avalon_pio_regs.h"
+
+int main()
+{
+	int i, max,min;
+	//alt_u32 *pbase ;
+	//int check_mem(alt_u32 mem_base, int min, int max);
+
+    printf("Hello from Nios II on (SDRAM)\n");
+  //  void *lots_of_memory = malloc(1024*1024*50); // allocate 5MB of memory
+    // printf("malloc returned 0x%08lx\n", (alt_u32)lots_of_memory);
+        printf("Test line 2");
+//      	IOWR_ALTERA_AVALON_PIO_DATA(LED_BASE,   0x05);
+//      	printf("DEl external SRAM/SDRAM test \n\n");
+//      	printf("\n\nSDRAM test: \n");
+//      	check_mem(SDRAM_BASE , 0, 0x001fffff);
+
+        for(i=min; i<max; i++)    {
+                IOWR(SDRAM_BASE,0,i);
+            }
+        for(i=min; i<max; i++)    {
+                     pbase=IOWR(SDRAM_BASE,i);
+                     printf("%d %d \n",i, pbase);
+
+            }
+  return 0;
+}
+
+// check_mem( mem_base,  min,  max)
+//{
+//	int err, real_err;
+//	alt_u32 *pbase ;
+//	alt_u32 t_pattn= 0xfa30fa30 ;
+//	alt_u32 i;
+//	pbase = (alt_u32 *)mem_base;
+//	err = 0;
+//	printf("writ e starte d .. . \n") ;
+//	for (i=min ; i<(max-3) ; i++) {
+//		pbase [i ] = i * t_pattn ; ;
+//	}
+//	printf("read back started ...\n") ;
+//	for (i=min ; i<=max; i++){
+//		if (pbase[i]!=(i*t_pattn) ) {
+//			err++ ;
+//		}
+//	}
+//	real_err = err-4 ;
+//	printf (" completed with */,d actua l errors.\n" , real_err) ;
+//	return(real_err) ;
+//}

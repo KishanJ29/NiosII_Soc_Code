@@ -1,0 +1,201 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 1991-2013 Altera Corporation
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Altera Program License 
+# Subscription Agreement, Altera MegaCore Function License 
+# Agreement, or other applicable license agreement, including, 
+# without limitation, that your use is for the sole purpose of 
+# programming logic devices manufactured by Altera and sold by 
+# Altera or its authorized distributors.  Please refer to the 
+# applicable agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus II 64-Bit
+# Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+# Date created = 15:48:23  March 14, 2020
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		NiosSystem_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus II software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "Cyclone III"
+set_global_assignment -name DEVICE EP3C16F484C6
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION "13.0 SP1"
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "15:48:23  MARCH 14, 2020"
+set_global_assignment -name LAST_QUARTUS_VERSION "13.0 SP1"
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 1
+set_global_assignment -name VERILOG_FILE NiosPheriSys/synthesis/submodules/NiosPheriSys_timer.v
+set_global_assignment -name VERILOG_FILE NiosPheriSys/synthesis/submodules/NiosPheriSys_sdram_cntr.v
+set_global_assignment -name SYSTEMVERILOG_FILE NiosPheriSys/synthesis/submodules/NiosPheriSys_rsp_xbar_mux_001.sv
+set_global_assignment -name SYSTEMVERILOG_FILE NiosPheriSys/synthesis/submodules/NiosPheriSys_rsp_xbar_mux.sv
+set_global_assignment -name SYSTEMVERILOG_FILE NiosPheriSys/synthesis/submodules/NiosPheriSys_rsp_xbar_demux_003.sv
+set_global_assignment -name SYSTEMVERILOG_FILE NiosPheriSys/synthesis/submodules/NiosPheriSys_rsp_xbar_demux.sv
+set_global_assignment -name VERILOG_FILE NiosPheriSys/synthesis/submodules/NiosPheriSys_onchip_memory.v
+set_global_assignment -name VERILOG_FILE NiosPheriSys/synthesis/submodules/NiosPheriSys_jtag_uart.v
+set_global_assignment -name SYSTEMVERILOG_FILE NiosPheriSys/synthesis/submodules/NiosPheriSys_irq_mapper.sv
+set_global_assignment -name SYSTEMVERILOG_FILE NiosPheriSys/synthesis/submodules/NiosPheriSys_id_router_003.sv
+set_global_assignment -name SYSTEMVERILOG_FILE NiosPheriSys/synthesis/submodules/NiosPheriSys_id_router_002.sv
+set_global_assignment -name SYSTEMVERILOG_FILE NiosPheriSys/synthesis/submodules/NiosPheriSys_id_router.sv
+set_global_assignment -name VERILOG_FILE NiosPheriSys/synthesis/submodules/NiosPheriSys_cpu_test_bench.v
+set_global_assignment -name VERILOG_FILE NiosPheriSys/synthesis/submodules/NiosPheriSys_cpu_oci_test_bench.v
+set_global_assignment -name VERILOG_FILE NiosPheriSys/synthesis/submodules/NiosPheriSys_cpu_mult_cell.v
+set_global_assignment -name VERILOG_FILE NiosPheriSys/synthesis/submodules/NiosPheriSys_cpu_jtag_debug_module_wrapper.v
+set_global_assignment -name VERILOG_FILE NiosPheriSys/synthesis/submodules/NiosPheriSys_cpu_jtag_debug_module_tck.v
+set_global_assignment -name VERILOG_FILE NiosPheriSys/synthesis/submodules/NiosPheriSys_cpu_jtag_debug_module_sysclk.v
+set_global_assignment -name VERILOG_FILE NiosPheriSys/synthesis/submodules/NiosPheriSys_cpu.v
+set_global_assignment -name SYSTEMVERILOG_FILE NiosPheriSys/synthesis/submodules/NiosPheriSys_cmd_xbar_mux.sv
+set_global_assignment -name SYSTEMVERILOG_FILE NiosPheriSys/synthesis/submodules/NiosPheriSys_cmd_xbar_demux_001.sv
+set_global_assignment -name SYSTEMVERILOG_FILE NiosPheriSys/synthesis/submodules/NiosPheriSys_cmd_xbar_demux.sv
+set_global_assignment -name SYSTEMVERILOG_FILE NiosPheriSys/synthesis/submodules/NiosPheriSys_addr_router_001.sv
+set_global_assignment -name SYSTEMVERILOG_FILE NiosPheriSys/synthesis/submodules/NiosPheriSys_addr_router.sv
+set_global_assignment -name VERILOG_FILE NiosPheriSys/synthesis/submodules/NiosPheriSys_7seg0.v
+set_global_assignment -name VERILOG_FILE NiosPheriSys/synthesis/submodules/altera_reset_synchronizer.v
+set_global_assignment -name VERILOG_FILE NiosPheriSys/synthesis/submodules/altera_reset_controller.v
+set_global_assignment -name SYSTEMVERILOG_FILE NiosPheriSys/synthesis/submodules/altera_merlin_width_adapter.sv
+set_global_assignment -name SYSTEMVERILOG_FILE NiosPheriSys/synthesis/submodules/altera_merlin_traffic_limiter.sv
+set_global_assignment -name SYSTEMVERILOG_FILE NiosPheriSys/synthesis/submodules/altera_merlin_slave_translator.sv
+set_global_assignment -name SYSTEMVERILOG_FILE NiosPheriSys/synthesis/submodules/altera_merlin_slave_agent.sv
+set_global_assignment -name SYSTEMVERILOG_FILE NiosPheriSys/synthesis/submodules/altera_merlin_master_translator.sv
+set_global_assignment -name SYSTEMVERILOG_FILE NiosPheriSys/synthesis/submodules/altera_merlin_master_agent.sv
+set_global_assignment -name SYSTEMVERILOG_FILE NiosPheriSys/synthesis/submodules/altera_merlin_burst_uncompressor.sv
+set_global_assignment -name SYSTEMVERILOG_FILE NiosPheriSys/synthesis/submodules/altera_merlin_burst_adapter.sv
+set_global_assignment -name SYSTEMVERILOG_FILE NiosPheriSys/synthesis/submodules/altera_merlin_arbitrator.sv
+set_global_assignment -name SYSTEMVERILOG_FILE NiosPheriSys/synthesis/submodules/altera_merlin_address_alignment.sv
+set_global_assignment -name VERILOG_FILE NiosPheriSys/synthesis/submodules/altera_avalon_st_pipeline_base.v
+set_global_assignment -name VERILOG_FILE NiosPheriSys/synthesis/submodules/altera_avalon_sc_fifo.v
+set_global_assignment -name VHDL_FILE NiosPheriSys/synthesis/niospherisys_width_adapter_001.vhd
+set_global_assignment -name VHDL_FILE NiosPheriSys/synthesis/niospherisys_width_adapter.vhd
+set_global_assignment -name VHDL_FILE NiosPheriSys/synthesis/niospherisys_timer_s1_translator.vhd
+set_global_assignment -name VHDL_FILE NiosPheriSys/synthesis/niospherisys_sdram_cntr_s1_translator_avalon_universal_slave_0_agent_rsp_fifo.vhd
+set_global_assignment -name VHDL_FILE NiosPheriSys/synthesis/niospherisys_sdram_cntr_s1_translator_avalon_universal_slave_0_agent_rdata_fifo.vhd
+set_global_assignment -name VHDL_FILE NiosPheriSys/synthesis/niospherisys_sdram_cntr_s1_translator_avalon_universal_slave_0_agent.vhd
+set_global_assignment -name VHDL_FILE NiosPheriSys/synthesis/niospherisys_sdram_cntr_s1_translator.vhd
+set_global_assignment -name VHDL_FILE NiosPheriSys/synthesis/niospherisys_onchip_memory_s1_translator.vhd
+set_global_assignment -name VHDL_FILE NiosPheriSys/synthesis/niospherisys_jtag_uart_avalon_jtag_slave_translator.vhd
+set_global_assignment -name VHDL_FILE NiosPheriSys/synthesis/niospherisys_cpu_jtag_debug_module_translator_avalon_universal_slave_0_agent_rsp_fifo.vhd
+set_global_assignment -name VHDL_FILE NiosPheriSys/synthesis/niospherisys_cpu_jtag_debug_module_translator_avalon_universal_slave_0_agent.vhd
+set_global_assignment -name VHDL_FILE NiosPheriSys/synthesis/niospherisys_cpu_jtag_debug_module_translator.vhd
+set_global_assignment -name VHDL_FILE NiosPheriSys/synthesis/niospherisys_cpu_instruction_master_translator.vhd
+set_global_assignment -name VHDL_FILE NiosPheriSys/synthesis/niospherisys_cpu_data_master_translator.vhd
+set_global_assignment -name VHDL_FILE NiosPheriSys/synthesis/niospherisys_7seg3_s1_translator.vhd
+set_global_assignment -name VHDL_FILE NiosPheriSys/synthesis/NiosPheriSys.vhd
+set_global_assignment -name QIP_FILE NiosPheriSys/synthesis/NiosPheriSys.qip
+set_global_assignment -name VHDL_FILE NiosPheriSysTop.vhd
+set_global_assignment -name QIP_FILE sdram_nios_pll.qip
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "2.5 V"
+set_global_assignment -name TOP_LEVEL_ENTITY NiosPheriSysTop
+set_location_assignment PIN_D13 -to idseven_seg0_export[7]
+set_location_assignment PIN_F13 -to idseven_seg0_export[6]
+set_location_assignment PIN_F12 -to idseven_seg0_export[5]
+set_location_assignment PIN_G12 -to idseven_seg0_export[4]
+set_location_assignment PIN_H13 -to idseven_seg0_export[3]
+set_location_assignment PIN_H12 -to idseven_seg0_export[2]
+set_location_assignment PIN_F11 -to idseven_seg0_export[1]
+set_location_assignment PIN_E11 -to idseven_seg0_export[0]
+set_location_assignment PIN_B15 -to idseven_seg1_export[7]
+set_location_assignment PIN_A15 -to idseven_seg1_export[6]
+set_location_assignment PIN_E14 -to idseven_seg1_export[5]
+set_location_assignment PIN_B14 -to idseven_seg1_export[4]
+set_location_assignment PIN_A14 -to idseven_seg1_export[3]
+set_location_assignment PIN_C13 -to idseven_seg1_export[2]
+set_location_assignment PIN_B13 -to idseven_seg1_export[1]
+set_location_assignment PIN_A13 -to idseven_seg1_export[0]
+set_location_assignment PIN_A18 -to idseven_seg2_export[7]
+set_location_assignment PIN_F14 -to idseven_seg2_export[6]
+set_location_assignment PIN_B17 -to idseven_seg2_export[5]
+set_location_assignment PIN_A17 -to idseven_seg2_export[4]
+set_location_assignment PIN_E15 -to idseven_seg2_export[3]
+set_location_assignment PIN_B16 -to idseven_seg2_export[2]
+set_location_assignment PIN_A16 -to idseven_seg2_export[1]
+set_location_assignment PIN_D15 -to idseven_seg2_export[0]
+set_location_assignment PIN_G16 -to idseven_seg3_export[7]
+set_location_assignment PIN_G15 -to idseven_seg3_export[6]
+set_location_assignment PIN_D19 -to idseven_seg3_export[5]
+set_location_assignment PIN_C19 -to idseven_seg3_export[4]
+set_location_assignment PIN_B19 -to idseven_seg3_export[3]
+set_location_assignment PIN_A19 -to idseven_seg3_export[2]
+set_location_assignment PIN_F15 -to idseven_seg3_export[1]
+set_location_assignment PIN_B18 -to idseven_seg3_export[0]
+set_location_assignment PIN_G21 -to inclk0
+set_location_assignment PIN_E3 -to sw_export[7]
+set_location_assignment PIN_H7 -to sw_export[6]
+set_location_assignment PIN_J7 -to sw_export[5]
+set_location_assignment PIN_G5 -to sw_export[4]
+set_location_assignment PIN_G4 -to sw_export[3]
+set_location_assignment PIN_H6 -to sw_export[2]
+set_location_assignment PIN_H5 -to sw_export[1]
+set_location_assignment PIN_J6 -to sw_export[0]
+set_location_assignment PIN_H2 -to reset_reset_n
+set_location_assignment PIN_C2 -to led_export[7]
+set_location_assignment PIN_C1 -to led_export[6]
+set_location_assignment PIN_E1 -to led_export[5]
+set_location_assignment PIN_F2 -to led_export[4]
+set_location_assignment PIN_H1 -to led_export[3]
+set_location_assignment PIN_J3 -to led_export[2]
+set_location_assignment PIN_J2 -to led_export[1]
+set_location_assignment PIN_J1 -to led_export[0]
+set_location_assignment PIN_C8 -to sdram_cntr_addr[12]
+set_location_assignment PIN_A7 -to sdram_cntr_addr[11]
+set_location_assignment PIN_B4 -to sdram_cntr_addr[10]
+set_location_assignment PIN_B7 -to sdram_cntr_addr[9]
+set_location_assignment PIN_C7 -to sdram_cntr_addr[8]
+set_location_assignment PIN_A6 -to sdram_cntr_addr[7]
+set_location_assignment PIN_B6 -to sdram_cntr_addr[6]
+set_location_assignment PIN_C6 -to sdram_cntr_addr[5]
+set_location_assignment PIN_A5 -to sdram_cntr_addr[4]
+set_location_assignment PIN_C3 -to sdram_cntr_addr[3]
+set_location_assignment PIN_B3 -to sdram_cntr_addr[2]
+set_location_assignment PIN_A3 -to sdram_cntr_addr[1]
+set_location_assignment PIN_C4 -to sdram_cntr_addr[0]
+set_location_assignment PIN_A4 -to sdram_cntr_ba[1]
+set_location_assignment PIN_B5 -to sdram_cntr_ba[0]
+set_location_assignment PIN_G8 -to sdram_cntr_cas_n
+set_location_assignment PIN_E6 -to sdram_cntr_cke
+set_location_assignment PIN_G7 -to sdram_cntr_cs_n
+set_location_assignment PIN_F10 -to sdram_cntr_dq[15]
+set_location_assignment PIN_E10 -to sdram_cntr_dq[14]
+set_location_assignment PIN_A10 -to sdram_cntr_dq[13]
+set_location_assignment PIN_B10 -to sdram_cntr_dq[12]
+set_location_assignment PIN_C10 -to sdram_cntr_dq[11]
+set_location_assignment PIN_A9 -to sdram_cntr_dq[10]
+set_location_assignment PIN_B9 -to sdram_cntr_dq[9]
+set_location_assignment PIN_A8 -to sdram_cntr_dq[8]
+set_location_assignment PIN_F8 -to sdram_cntr_dq[7]
+set_location_assignment PIN_H9 -to sdram_cntr_dq[6]
+set_location_assignment PIN_G9 -to sdram_cntr_dq[5]
+set_location_assignment PIN_F9 -to sdram_cntr_dq[4]
+set_location_assignment PIN_E9 -to sdram_cntr_dq[3]
+set_location_assignment PIN_H10 -to sdram_cntr_dq[2]
+set_location_assignment PIN_G10 -to sdram_cntr_dq[1]
+set_location_assignment PIN_D10 -to sdram_cntr_dq[0]
+set_location_assignment PIN_B8 -to sdram_cntr_dqm[1]
+set_location_assignment PIN_E7 -to sdram_cntr_dqm[0]
+set_location_assignment PIN_F7 -to sdram_cntr_ras_n
+set_location_assignment PIN_D6 -to sdram_cntr_we_n
+set_location_assignment PIN_E5 -to c1
+set_global_assignment -name CDF_FILE output_files/NiosSystem_time_limited.cdf
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
